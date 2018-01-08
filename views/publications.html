@@ -28,12 +28,13 @@
           <!-- Teal page content  -->
           <h6>Publicaciones</h6>
           <div id="public-users" class="container-publish bg-beige">
-            Hoy es un buen dia para empezar con el mundo tech
+           
           </div>
         </div>
       </div>
     </div>
   </section>
+  <button id="bt">prueba</button>
   <!-- Modal Trigger -->
   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
@@ -62,7 +63,23 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar Mensaje</a>
     </div>
   </div>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+     apiKey: 'AIzaSyA4JLJ0zW66Ev4W6MHXeSGHJDUJ6juimtg',
+     authDomain: 'socialnetwork-c912e.firebaseapp.com',
+     databaseURL: 'https://socialnetwork-c912e.firebaseio.com',
+     projectId: 'socialnetwork-c912e',
+     storageBucket: 'socialnetwork-c912e.appspot.com',
+     messagingSenderId: '292794213885'
+  };
+
+  firebase.initializeApp(config);
+
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="../js/publications.js"></script>
