@@ -18,7 +18,7 @@ body{
     top: -5vh;
 }
 .form-login{
-    height: 50vh;
+    height: 45vh;
     bottom: 8em;
     padding: 4vh;
     border-radius: 2vh;
@@ -29,6 +29,7 @@ body{
     margin: 0 auto;
     left:0;
     right:0;
+    box-shadow:  5px 3px #888888;
 }
 .text-center{
     text-align: center;
