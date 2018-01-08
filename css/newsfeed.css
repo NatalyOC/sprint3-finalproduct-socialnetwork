@@ -45,3 +45,73 @@ input#search{
     left: 1vh;
     margin-right: 1vh;
 }
+.icons{
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    right: 3vh;
+    margin: 3vh;
+    font-size: 1.6em;
+}
+.fa{
+    margin-right: 3vh;
+}
+.fa-user-circle{
+    margin-left: 3vh;
+}
+.img-user{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 100%;
+    position: relative;
+    top: -1vh;
+    border: 2px solid #eef3ed;
+}
+.bg-newsfeed{
+    background-color: #eef3ed;
+    height: 12vh;
+    width: 45vh;
+    position: relative;
+    top: 15vh;
+    left: 15vh;
+    margin: 0;
+    margin-right: 0;
+    padding: 3vh;
+}
+.username{
+    display: inline-block;
+    position: relative;
+    bottom: 2vh;
+    margin-left: 2vh;
+}
+.bg-publish{
+    width: 73vh;
+    height: 20vh;
+    position: relative;
+    top: 2.5vh;
+    background-color: #eef3ed;
+}
+.user-publish{
+    position: relative;
+    top: 1vh;
+    left: 2vh;
+    float: left;
+}
+input #search{
+    position: relative;
+    margin-top: 4vh;
+}
+textarea{
+    width: 55vh;
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+.icons-publish{
+    margin-left: 12vh;
+}
+.btn-publish{
+    display: inline-block;
+    width: 20vh;
+    float: right;
+    margin-right: 6vh;
+}
