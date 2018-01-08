@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #010e39;
+}
+/*
+body{
+    background-image: url(../assets/images/moon.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}*/
+h1{
+    position: absolute;
+    top: -2vh;
+    font-size: 3em;
+    padding-left: 1.5em;
+    font-family: 'Pacifico', cursive;
+}
+.button-op{
+    position: absolute;
+    top: 4vh;
+    right: 4vh;
+}
+.btn-login{
+    margin-right: 2vh;
+    border: 2px solid #b8d7d4;
+    background: rgba(0, 0, 0, 0.1);
+    width: 26vh;
+}
+.btn-signup, .btn-login{
+    border-radius: 20vh;
+    font-weight: 600;
+}
+.btn-signup{
+   background: #b8d7d4; 
+   color: #0e1217;
+   width: 25vh;
+}
+.form-signup{
+    position: absolute;
+    width: 55vh;
+    right: 10vh;
+    top: 20vh;
+    background: #eef3ed;
+    padding: 4vh;
+    border-radius: 2vh;
+    z-index: 10;
+}
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 20vh;
+}
+.button-account{
+    align-items: center;
+    margin: auto;
+    align-self: center;
+}
+.text-center{
+    text-align: center;
+}
