@@ -186,9 +186,9 @@ textarea{
         margin-right: 1vh;
     }
     .icons{
-        display: flex;
-        flex-flow: row;
-        position: absolute;
+        display:inline-block;
+        position: relative;
+        left: 63vh;
         right: 3vh;
         margin: 3vh;
         font-size: 1.6em;

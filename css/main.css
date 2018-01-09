@@ -6,6 +6,110 @@
 body{
     background-color: #010e39;
 }
+.text-logo{
+    font-size: 2em;
+    font-family: 'Pacifico', serif;
+    position: relative;
+    left: 3vh;
+}
+.form-signup{
+    display: none;
+}
+.button-op{
+    width: 35vh;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 25vh;
+    z-index: 10;
+}
+.btn-login{
+    margin-bottom: 4vh;
+    text-align: center;
+}
+input#login{
+    padding-left: 3vh;
+}
+input#signup{
+    padding-left: 1.5em;
+}
+.btn-login{
+    margin-right: 2vh;
+    border: 2px solid #b8d7d4;
+    background: rgba(0, 0, 0, 0.1);
+    width: 26vh;
+}
+.btn-signup, .btn-login{
+    border-radius: 20vh;
+    font-weight: 600;
+}
+.btn-signup{
+   background: #b8d7d4; 
+   color: #0e1217;
+   width: 25vh;
+}
+@media (min-width:500px){
+    h1{
+        position: absolute;
+        top: -2vh;
+        font-size: 3em;
+        padding-left: 1.5em;
+        font-family: 'Pacifico', cursive;
+    }
+    .button-op{
+        position: absolute;
+        top: 4vh;
+        right: 4vh;
+        width: auto;
+    }
+    .btn-login{
+        margin-right: 2vh;
+        border: 2px solid #b8d7d4;
+        background: rgba(0, 0, 0, 0.1);
+        width: 26vh;
+    }
+    .btn-signup, .btn-login{
+        border-radius: 20vh;
+        font-weight: 600;
+    }
+    .btn-signup{
+       background: #b8d7d4; 
+       color: #0e1217;
+       width: 25vh;
+       position: relative;
+       top: -2vh;
+    }
+    .form-signup{
+        display: block;
+        position: absolute;
+        bottom: 13vh;
+    }
+    .form-signup{
+        position: absolute;
+        width: 55vh;
+        right: 10vh;
+        top: 20vh;
+        background: #eef3ed;
+        padding: 4vh;
+        border-radius: 2vh;
+        z-index: 10;
+    }
+    #particles-js{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 20vh;
+    }
+    .button-account{
+        align-items: center;
+        margin: auto;
+        align-self: center;
+    }
+    .text-center{
+        text-align: center;
+    }   
+}
+/*
 h1{
     position: absolute;
     top: -2vh;
@@ -57,8 +161,4 @@ h1{
 .text-center{
     text-align: center;
 }
-@media (max-width:400px){
-    div.form-signup{
-        display: none;
-    }
-}
+*/
