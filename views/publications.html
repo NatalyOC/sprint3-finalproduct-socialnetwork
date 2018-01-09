@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +12,39 @@
 </head>
 <body class="bg-light-blue">
   <!-- navigation -->
-  <header>
-  
+  <header class="bg-blue">
+    <div class="container">
+      <nav class="nav bg-blue">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo left">myplace</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a id="group" href="#"><i class="material-icons">group</i></a></li>
+            <li><a id="notifications" href="#"><i class="material-icons">notifications</i></a></li>
+            <li><a id="message" href="#"><i class="material-icons">message</i></a></li>
+            <li><a href=""><i class="material-icons">account_circle</i></a></li>
+            <!-- <li><div class="user-view"><a id="profileMenu" href="#"><img src="../assets/images/users/user.jpg" alt="" class="circle img-header text-center"></a></div></li> -->
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <img src="images/office.jpg">
+                </div>
+                <a href="#!user"><img class="circle" src="../assets/images/users/user.jpg"></a>
+                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+              </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <!-- Seccion Principal -->
   <section id="main">
@@ -22,13 +52,13 @@
       <div class="row">
         <div class="col s3 m3 l3">
           <!-- Grey navigation panel -->
-          <img src="../assets/images/users/user.jpg"  class="circle responsive-img" alt="">
+          <img src="../assets/images/users/user.jpg" class="circle responsive-img" alt="">
         </div>
         <div class="col s9 m9 l9">
           <!-- Teal page content  -->
           <h6>Publicaciones</h6>
           <div id="public-users" class="container-publish bg-beige">
-           
+
           </div>
         </div>
       </div>
@@ -43,20 +73,20 @@
     <div class="modal-content">
       <h4>Inicia conversacion</h4>
       <div class="container">
-          <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                      <label for="first_name">Para:</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Mensaje</label>
-                  </div>
-                </div>
-              </form>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">Para:</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Mensaje</label>
+              </div>
             </div>
+          </form>
+        </div>
       </div>
     </div>
     <div class="modal-footer">
@@ -67,19 +97,19 @@
   <script>
     // Initialize Firebase
     var config = {
-     apiKey: 'AIzaSyA4JLJ0zW66Ev4W6MHXeSGHJDUJ6juimtg',
-     authDomain: 'socialnetwork-c912e.firebaseapp.com',
-     databaseURL: 'https://socialnetwork-c912e.firebaseio.com',
-     projectId: 'socialnetwork-c912e',
-     storageBucket: 'socialnetwork-c912e.appspot.com',
-     messagingSenderId: '292794213885'
-  };
+      apiKey: 'AIzaSyA4JLJ0zW66Ev4W6MHXeSGHJDUJ6juimtg',
+      authDomain: 'socialnetwork-c912e.firebaseapp.com',
+      databaseURL: 'https://socialnetwork-c912e.firebaseio.com',
+      projectId: 'socialnetwork-c912e',
+      storageBucket: 'socialnetwork-c912e.appspot.com',
+      messagingSenderId: '292794213885'
+    };
 
-  firebase.initializeApp(config);
+    firebase.initializeApp(config);
 
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="../js/publications.js"></script>

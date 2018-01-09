@@ -1,10 +1,12 @@
 $(document).ready(function() {
+
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
   var refComments = '';
   
   var contenido=$('#public-users');
-  refComments = firebase.database().ref().child('recentComments');
+  var refData = firebase.database().ref();
+  refComments =refData.child('recentComments');
  
  $('#bt').on('click',function(){
     showData();
@@ -12,11 +14,12 @@ $(document).ready(function() {
   function showData() {
     refComments.on('value', function(snap) {
       var data = snap.val();
+      console.log(data);
       var filaAMostrar = '';
       for (var key in data) {
-        filaAMostrar += '<div>'+data[key].comment+'<div>'; 
+        filaAMostrar += '<div>'+data[key]+'<div>'; 
       }
-      contenido.innerHTML=filaAMostrar;
+      contenido.append(filaAMostrar);
     });
   }
 });
