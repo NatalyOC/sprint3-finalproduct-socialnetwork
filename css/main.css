@@ -6,17 +6,6 @@
 body{
     background-color: #010e39;
 }
-/*
-body{
-    background-image: url(../assets/images/moon.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}*/
 h1{
     position: absolute;
     top: -2vh;
@@ -67,4 +56,9 @@ h1{
 }
 .text-center{
     text-align: center;
+}
+@media (max-width:400px){
+    div.form-signup{
+        display: none;
+    }
 }

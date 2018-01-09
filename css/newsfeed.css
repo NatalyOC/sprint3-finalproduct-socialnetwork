@@ -1,117 +1,258 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: 0;
+}
+/*
+lightblue: #b8d7d4
+teal: #00678c
+black: #010e39
+khaki: #e9d271
+*/
+html{
+    width: auto;
+    height: auto;
 }
 body{
     background-color: #b8d7d4;
 }
 .bg-header{
     background-color: #010e39;
-    line-height: 1.5em;
-    width: 100%;
-    font-size: 3em;
-    padding-left: 1.5em;
-    font-family: 'Pacifico', cursive;
-    position: absolute;
-    top: -5vh;
-}
-.white-input{
-    width: 15vh;
-    height: 2vh;
-    background-color: #fff;
-}
-.form-login{
-    height: 5vh;
-    border-radius: 2vh;
-    padding: 2vh;
-    border-radius: 2vh;
-    width: 40vh;
-    position: absolute;
-    top: 3vh;
-    left: 45vh;
-    background-color: #fff;
-    line-height: 2px;
-}
-input#search{
-    height: 1em !important;
-    float: left;
-    margin-left: 2vh;
-    width: 30vh;
-}
-.icon-search{
-    display: inline;
-    position: absolute;
-    left: 1vh;
-    margin-right: 1vh;
-}
-.icons{
+    height: 6em;
+    width: auto;
+    position: relative;
+    left: 0;
     display: flex;
     flex-flow: row;
-    position: absolute;
-    right: 3vh;
-    margin: 3vh;
-    font-size: 1.6em;
+    margin-bottom: 3vh;
 }
-.fa{
-    margin-right: 3vh;
-}
-.fa-user-circle{
-    margin-left: 3vh;
-}
-.img-user{
-    width: 7vh;
-    height: 7vh;
-    border-radius: 100%;
-    position: relative;
-    top: -1vh;
-    border: 2px solid #eef3ed;
+.myLogo{
+    display: none;
 }
 .bg-newsfeed{
-    background-color: #eef3ed;
-    height: 12vh;
-    width: 45vh;
+    display: none;
+}
+div.form-login{
+    width: 30vh;
     position: relative;
-    top: 15vh;
-    left: 15vh;
+    left: 4vh;
+    top: 2vh;
+}
+input#search{
+    padding: 0.5vh;
+    border-radius: 2vh;
     margin: 0;
-    margin-right: 0;
-    padding: 3vh;
 }
-.username{
+.icon-search{
     display: inline-block;
-    position: relative;
-    bottom: 2vh;
-    margin-left: 2vh;
 }
-.bg-publish{
-    width: 73vh;
-    height: 20vh;
-    position: relative;
-    top: 2.5vh;
-    background-color: #eef3ed;
+.bg-newsfeed{
+    display: none;
 }
-.user-publish{
+.fa-users, .fa-envelope, .fa-bell{
+    display: none;
+}
+.img-user{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 100%;
+    border: 2px solid #e9d271;
+}
+.img-user-1{
+    position: absolute;
+    right: 2vh;
+    top: 2vh;
+}
+div.container .bg-publish{
+    position: relative;
+    top: 3vh;
+}
+textarea{
+    width: auto;
+    position: relative;
+    left: 2vh;
+    top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 1vh;
+}
+.img-user-3{
     position: relative;
     top: 1vh;
     left: 2vh;
-    float: left;
-}
-input #search{
-    position: relative;
-    margin-top: 4vh;
-}
-textarea{
-    width: 55vh;
-    margin-left: 5vh;
-    margin-top: 2vh;
 }
 .icons-publish{
-    margin-left: 12vh;
+    display: inline-block;
+    position: relative;
+    left: 13vh;
 }
 .btn-publish{
     display: inline-block;
-    width: 20vh;
-    float: right;
-    margin-right: 6vh;
+    position: relative;
+    left: 13vh;
+    margin-bottom: 3vh;
+}
+@media (min-width:600px){
+    .myLogo{
+        display: block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.5em;
+        position: relative;
+        bottom: 4vh;
+        left: 3vh;
+    }
+    div.form-login{
+        width: 30vh;
+        position: relative;
+        left: 4vh;
+        top: 2vh;
+        height: 15vh;
+    }
+    .bg-newsfeed{
+        display: block;
+        width: 30vh;
+        position: relative;
+        left: 5vh;
+        background-color: white;
+        padding: 3vh;
+        margin: 0vh;
+    }
+    
+    .bg-publish{
+        width: 73vh;
+        height: 25vh;
+        position: absolute;
+        background-color: #eef3ed;
+        margin:0;
+        display: inline-block;
+        left: 40vh;
+        top: 18.5vh;
+    }
+    textarea{
+        width: auto;
+        position: relative;
+    }
+    .bg-header{
+        width: auto;
+    }
+}
+@media (min-width:1400px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #b8d7d4;
+    }
+    .bg-header{
+        background-color: #010e39;
+        width: 100%;
+        position: absolute;
+        top: -5vh;
+    }
+    .myLogo{
+        line-height: 1.5em;
+        font-size: 3em;
+        padding-left: 1.5em;
+        font-family: 'Pacifico', cursive;
+    }
+    .white-input{
+        width: 15vh;
+        height: 2vh;
+        background-color: #fff;
+    }
+    .form-login{
+        height: 5vh;
+        border-radius: 2vh;
+        padding: 2vh;
+        border-radius: 2vh;
+        width: 40vh;
+        position: absolute;
+        top: 3vh;
+        left: 45vh;
+        background-color: #fff;
+        line-height: 2px;
+    }
+    input#search{
+        height: 1em !important;
+        float: left;
+        margin-left: 2vh;
+        width: 30vh;
+    }
+    .icon-search{
+        display: inline;
+        position: absolute;
+        left: 1vh;
+        margin-right: 1vh;
+    }
+    .icons{
+        display: flex;
+        flex-flow: row;
+        position: absolute;
+        right: 3vh;
+        margin: 3vh;
+        font-size: 1.6em;
+    }
+    .fa{
+        margin-right: 3vh;
+    }
+    .fa-user-circle{
+        margin-left: 3vh;
+    }
+    .img-user{
+        width: 7vh;
+        height: 7vh;
+        border-radius: 100%;
+        position: relative;
+        top: -1vh;
+        border: 2px solid #eef3ed;
+    }
+    .bg-newsfeed{
+        background-color: #eef3ed;
+        height: 12vh;
+        width: 45vh;
+        position: relative;
+        top: 15vh;
+        left: 15vh;
+        margin: 0;
+        margin-right: 0;
+        padding: 3vh;
+    }
+    .username{
+        display: inline-block;
+        position: relative;
+        bottom: 2vh;
+        margin-left: 2vh;
+    }
+    .bg-publish{
+        width: 73vh;
+        height: 20vh;
+        position: relative;
+        top: 2.5vh;
+        background-color: #eef3ed;
+    }
+    .user-publish{
+        position: relative;
+        top: 1vh;
+        left: 2vh;
+        float: left;
+    }
+    input #search{
+        position: relative;
+        margin-top: 4vh;
+    }
+    textarea{
+        width: 55vh;
+        margin-left: 5vh;
+        margin-top: 2vh;
+    }
+    .icons-publish{
+        margin-left: 12vh;
+    }
+    .btn-publish{
+        display: inline-block;
+        width: 20vh;
+        float: right;
+        margin-right: 6vh;
+    }
 }
