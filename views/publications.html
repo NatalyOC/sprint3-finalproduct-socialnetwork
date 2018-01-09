@@ -14,16 +14,15 @@
   <!-- navigation -->
   <header class="bg-blue">
     <div class="container">
-      <nav class="nav bg-blue">
+     <nav class="nav bg-blue">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo left">myplace</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a id="group" href="#"><i class="material-icons">group</i></a></li>
             <li><a id="notifications" href="#"><i class="material-icons">notifications</i></a></li>
-            <li><a id="message" href="#"><i class="material-icons">message</i></a></li>
+            <li><a id="message" class="modal-trigger" href="#modal1"><i class="material-icons">message</i></a></li>
             <li><a href=""><i class="material-icons">account_circle</i></a></li>
-            <!-- <li><div class="user-view"><a id="profileMenu" href="#"><img src="../assets/images/users/user.jpg" alt="" class="circle img-header text-center"></a></div></li> -->
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li>
@@ -36,16 +35,16 @@
                 <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
               </div>
             </li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
+            <li><a href="#!"><i class="material-icons">group</i>Amigos</a></li>
+            <li><a href="#!">Notificaciones<i class="material-icons">notifications</i></a></li>
+            <li><a class="modal-trigger" href="#modal1">Mensaje<i class="material-icons">message</i></a></li>
             <li><div class="divider"></div></li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <li><a class="waves-effect" href="#!">Cerrar Sesion</a></li>
           </ul>
         </div>
       </nav>
     </div>
-  </header>
+   </header>
   <!-- Seccion Principal -->
   <section id="main">
     <div class="container">
@@ -58,16 +57,12 @@
           <!-- Teal page content  -->
           <h6>Publicaciones</h6>
           <div id="public-users" class="container-publish bg-beige">
-
           </div>
         </div>
       </div>
     </div>
   </section>
   <button id="bt">prueba</button>
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">

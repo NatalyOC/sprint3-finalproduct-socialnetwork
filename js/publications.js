@@ -1,7 +1,9 @@
 $(document).ready(function() {
-
-  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+  // Llamada para activar el menu hamburguesa
+  $('.button-collapse').sideNav();
+  // Activa el modal
   $('.modal').modal();
+  // Declaramos variables que almacenará la referencia
   var refComments = '';
   
   var contenido=$('#public-users');
