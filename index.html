@@ -42,7 +42,7 @@
  </header>
   <!-- form -->
   <div class="container form-signup">
-    <form class="formValidate" id="formValidate" method="get" action="" novalidate="novalidate"> 
+    <form class="formValidate" id="formValidate"> 
     <label for="name">Name</label>
     <input id="uname" name="uname" type="text" class="validate" aria-required="true">
     <div class="errorTxt1"></div>
@@ -52,13 +52,18 @@
     <label for="password">Password</label>
     <input id="password" type="text" class="validate">
     <div class="text-center">
-      <button class="btn btn-account">registrarse</button>
+      <button class="btn btn-account" id="button-signup">registrarse</button>
     </div>
     </form>    
     <br>
     <p class="text-center">Al hacer click en <b>registrarse</b> aceptas los <a href="">Términos y condiciones</a>.</p>
   </div>
   <div id="particles-js"></div>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 

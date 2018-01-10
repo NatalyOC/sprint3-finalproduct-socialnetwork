@@ -19,11 +19,11 @@ body{
 }
 .form-login{
     height: 45vh;
-    bottom: 8em;
+    bottom: 16em;
     padding: 4vh;
     border-radius: 2vh;
     z-index: 10;
-    width: 55vh;
+    max-width: 55vh;
     position: absolute;
     background-color: #fff;
     margin: 0 auto;

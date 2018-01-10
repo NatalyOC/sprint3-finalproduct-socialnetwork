@@ -82,7 +82,7 @@ h1{
   background-color: #E9D271;
 }
 .bg-acero{
-  background-color: #00678c;
+  background-color: rgb(0, 103, 140);
 }
 .container-publish{
   border-radius: 5px;
@@ -98,4 +98,8 @@ h1{
 }
 .container-90{
   width: 90%!important;
+}
+.logo{
+  width: 45%;
+  height: 20%;
 }
