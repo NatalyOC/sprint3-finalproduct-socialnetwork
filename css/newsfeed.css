@@ -91,6 +91,18 @@ textarea{
     left: 13vh;
     margin-bottom: 3vh;
 }
+.fa-heart{
+    color: salmon;
+}
+.textarea{
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 2.5vh;
+    left: 4vh;
+    padding: 3vh;
+    background-color: #eef3ed;
+}
 @media (min-width:600px){
     .myLogo{
         display: block;
@@ -133,6 +145,17 @@ textarea{
     }
     .bg-header{
         width: auto;
+    }
+    .textarea{
+        width: 70vh;
+        height: auto;
+        position: relative;
+        top: 8vh;
+        left: 40vh;
+        margin-top: 3vh;
+        padding: 3vh;
+        background-color: #eef3ed;
+        
     }
 }
 @media (min-width:1400px) {
