@@ -1,4 +1,4 @@
-# Reto
+# Producto Final
 * **Track:** _Common Core_
 * **Curso:** _Crea tu propia red social_
 * **Unidad:** _Producto Final Red Social X_
@@ -25,9 +25,12 @@ Un ejemplo: a este emprendedor le presentaron un caso de una red social para qu�
 
 Debes subir todos tus ejercicios a GitHub y publicarlos en gh-pages.
 
-**We Love Tech**
+## **Red Social: We Love Tech**
 
 Red Social enfocada a personas que gustan de ciencia y tecnología.
+### Integrantes:
+* Darcy Cervera Huamani.
+* Nataly del Carmen Otero Celis.
 
 ##### Planificación:
 * Dia 1 05/01/18
@@ -41,10 +44,12 @@ Prototipado
 
 * Dia 3 07/01/18 
 Feeback Prototipado
+Uso de Colores y tipografía
 
 * Dia 4-6
 Empezando-Desarrollo maquetación y Funcionalidad
 Investigacion sobre le uso Firebase.
+Creación de Logo.
 
 ##### Herramientas utilizadas:
 * Framework Materialize
