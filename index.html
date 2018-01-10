@@ -13,14 +13,15 @@
 <body>
   <!-- navigation -->
   <div>
-    <h1 class="white-text">myPlace</h1>
+    <img src="assets/images/logotipo.png" alt="logo_white" class="logo responsive-img">
     <div class="button-op">
-      <input class="btn btn-login" type="button" value="inicia sesión">
-      <input class="btn btn-signup" type="button" value="registrate">
+      <input class="btn btn-login" type="button" id="login" value="inicia sesión">
+      <input class="btn btn-signup" type="button" id="signup" value="registrate">
     </div>
   </div>
   <!-- form -->
-  <div class="container form-signup">
+  <div class="container form-signup" id="form-signup-white">
+    <form action="" >
     <label for="name">Name</label>
     <input id="name" type="text" class="validate">
     <label for="email">Email</label>
@@ -28,18 +29,19 @@
     <label for="password">Password</label>
     <input id="password" type="text" class="validate">
     <div class="text-center">
-      <button class="btn btn-account">registrarse</button>
+      <button class="btn btn-account" id="button-signup">registrarse</button>
     </div>
     <br>
     <p class="text-center">Al hacer click en <b>registrarse</b> aceptas los <a href="">Términos y condiciones</a>.</p>
   </div>
-  
+  </form>
   <div id="particles-js"></div>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="js/particles.js"></script>
+  <script src="js/dataparticles.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
