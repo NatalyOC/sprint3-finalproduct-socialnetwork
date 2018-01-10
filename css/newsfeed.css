@@ -90,6 +90,56 @@ textarea{
     position: relative;
     left: 13vh;
     margin-bottom: 3vh;
+    top: -6vh;
+}
+.fa-heart{
+    color: salmon;
+}
+.textarea{
+    width: 90%;
+    height: auto;
+    position: relative;
+    top: 2.5vh;
+    left: 4vh;
+    padding: 3vh;
+    background-color: #eef3ed;
+}
+.icons-publish{
+    outline: 1px solid black;
+}
+.fa-video-camera, .fa-camera{
+    width: auto;
+    margin: 0;
+    padding: 0.5vh;
+    float: left;
+    margin: auto;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.input-field{
+    width: 20vh;
+    display: inline-block;
+    top: -2vh;
+}
+form.form{
+    width: 30vh;
+    margin-right: 0vh ;
+    display: inline;
+    left: 8vh;
+    position: relative;
+}
+.file-path{
+    position: relative;
+    top: -4vh;
+    color: #fff;
+}
+.file-path .validate{
+    position: relative;
+    bottom: 0;
+}
+.img-input{
+    width: 20vh;
+    height: 20vh;
 }
 @media (min-width:600px){
     .myLogo{
@@ -133,6 +183,17 @@ textarea{
     }
     .bg-header{
         width: auto;
+    }
+    .textarea{
+        width: 70vh;
+        height: auto;
+        position: relative;
+        top: 8vh;
+        left: 40vh;
+        margin-top: 3vh;
+        padding: 3vh;
+        background-color: #eef3ed;
+        
     }
 }
 @media (min-width:1400px) {
