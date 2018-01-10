@@ -12,13 +12,17 @@ $(document).ready(function() {
       console.log('hey');
     }
   });*/
+  var $user = $('#user').val(localStorage.user);
   $posting.on('click', function(event) {
     console.log($textarea.val());
     // if ($textarea.val() !== '') {
     var $content = $textarea.val();
-    var div = $('body').append('<div class="textarea "> <img class="img-user img-user-2" src="../assets/images/moon.jpg" alt="img-user"><div class="username dark-text">Username</div><br>' + $content + '<br><br><hr><i class="fa fa-heart" aria-hidden="true"></i></div><br>');
+    var $inputField = $('.file-path').val();
+    console.log($inputField);
+    var div = $('body').append('<div class="textarea "> <img class="img-user img-user-2" src="../assets/images/moon.jpg" alt="img-user"><span id="user" class="username dark-text"></span><br>' + $content + '<img class="img-input" src="' + $inputField +'">' + '<br><br><hr><i class="fa fa-heart" aria-hidden="true"></i></div><br>');
     // $('body').append(div);
     // }
     $textarea.val('');
+    $inputField.val('');
   });
 });

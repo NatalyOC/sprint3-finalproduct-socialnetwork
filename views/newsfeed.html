@@ -32,7 +32,7 @@
   <div class="container bg-newsfeed">
     <img class="img-user img-user-2" src="../assets/images/moon.jpg" alt="img-user">  
     <div class="username">
-      <span>Username</span>
+      <span id="user">Username</span>
       <hr>
     </div>
   </div>
@@ -41,10 +41,29 @@
     <!--<input id="search" type="text"  placeholder="Buscar">-->
     <textarea name="" id="textarea" cols="30" rows="10"></textarea>
     <br>
-    <div class="icons-publish">
-      <i class="fa fa-camera" aria-hidden="true"></i>
-      <i class="fa fa-video-camera" aria-hidden="true"></i>
-    </div>
+    
+    <form class="form" action="#">
+        <div class="file-field input-field">
+          <div class="orange-text">
+            <span class="fa fa-camera"></span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+      <form  class="form"action="#">
+          <div class="file-field input-field">
+            <div class="purple-text">
+              <span class="fa fa-video-camera"></span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </form>
     <div>
       <input id="posting" type="button" class="btn teal btn-publish" value="Publicar">
     </div>
