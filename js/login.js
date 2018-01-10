@@ -8,6 +8,7 @@ $(document).ready(function() {
   // Validacion de inputs
   $('#password').on('input', function(event) {
     $valueName = $(this).val();
+    
     // Evalua si input se encuentra vacio por medio de la longitud
     if ($valueName.length > 0) {
       // Modifica el valor de la variable y llama a la funcion habilita boton
@@ -22,6 +23,7 @@ $(document).ready(function() {
     // Evalua si input se encuentra vacio por medio de la longitud
     if ($valueName.length > 0) {
       // Modifica el valor de la variable y llama a la funcion habilita boton
+      localStorage.user = $valueName;
       validateEmail = true;
       enabledButton();
     } else {
