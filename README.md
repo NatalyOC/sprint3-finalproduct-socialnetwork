@@ -42,7 +42,7 @@ Encuentas a usuarios
 Buscando solución a problematica
 Prototipado
 
-* Dia 3 07/01/18 
+* Dia 3 07/01/18
 Feeback Prototipado
 Uso de Colores y tipografía
 
@@ -58,3 +58,18 @@ Creación de Logo.
 * HTML5
 
 ![web](assets/redsocial.png)
+
+### Sugerencias:
+
+* La presentacion se debe enfocar mas en el producto (app) que quieres vender, y el titulo debe ser el nombre de su aplicacion, que masomenos seria asi:
+
+# We love tech
+
+* Como presentacion hubiese sido ideal poner el logo de su aplicacion al inicio.
+
+![web](assets/images/logo.png)
+
+* Añadir un eslogan seria genial chicas les da un pluss++.
+*eslogan:donde tus ideas tech hacen sinapsis*
+
+* En la primera parte de la introduccion, debio haber sido mas reducido con respecto a lo que piden para su app.
