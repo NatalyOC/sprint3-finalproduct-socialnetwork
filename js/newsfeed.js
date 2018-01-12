@@ -3,11 +3,13 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   // Activa el modal
   $('.modal').modal();
+  $('.dropdown-button').dropdown('open');
   var $posting = $('#posting');
   var $textarea = $('#textarea');
   var images = '';
-  var $user = $('#user').val(localStorage.user);
-  alert($user);
+  var userSession=localStorage.user;
+  $('#user').text(userSession);
+  
   $posting.on('click', function(event) {
     console.log($textarea.val());
     var $content = $textarea.val();
