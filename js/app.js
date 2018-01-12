@@ -8,10 +8,7 @@ $(document).ready(function() {
     alert('Registro Sastifactorio');
     $(location).attr('href', 'views/login.html');
   });
-  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ...
-  });
+  $('#signup').on('click', function() {
+    $(location).attr('href', 'views/signup.html');
+  });  
 });

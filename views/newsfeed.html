@@ -5,67 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Red Social</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/newsfeedquery.css">
-  <link rel="stylesheet" href="../css/newsfeed.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body class="bg-light-blue">
   <!-- navigation -->
-    <div class="container-fluid bg-header">
-      <h1 class="white-text myText"><span class="myLogo">myPlace</span></h1>
-      <div class="form-login">
-        <!--<span class="fa fa-search icon-search" aria-hidden="true"></span>-->
-        <input id="search" type="text" class="white s" placeholder="Buscar">
-      </div>
-      <div class="icons teal">
-        <i class="fa fa-users white-text" aria-hidden="true"></i>
-        <i class="fa fa-envelope white-text" aria-hidden="true"></i>
-        <i class="fa fa-bell white-text" aria-hidden="true"></i>
-        <!--<i class="fa fa-user-circle white-text" aria-hidden="true"></i>-->        
-        
-          <img class="img-user img-user-1 " src="../assets/images/moon.jpg" alt="img-user">        
-        
-      </div>
+  <header class="bg-blue">
+    <div class="container">
+      <nav class="nav bg-blue">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo left logo"><img src="../assets/images/logos1.png" alt="" class="logo"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a id="group" href="#"><i class="material-icons">group</i></a></li>
+            <li><a id="notifications" href="#"><i class="material-icons">notifications</i></a></li>
+            <li><a id="message" class="modal-trigger" href="#modal1"><i class="material-icons">message</i></a></li>
+            <li><a href=""><i class="material-icons">account_circle</i></a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo" class="bg-beige">
+            <li>
+              <div class="user-view">
+                <div class="background">
+                  <!-- <img src="images/office.jpg"> -->
+                </div>
+                <a href="#!user"><i class="material-icons">account_circle</i></a>
+                <a href="#!name"><span class="white-text name">Nataly Otero</span></a>
+                <a href="#!email"><span class="white-text email">noteroc@hotmail.com</span></a>
+              </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">group</i>Amigos</a></li>
+            <li><a href="#!">Notificaciones<i class="material-icons">notifications</i></a></li>
+            <li><a class="modal-trigger" href="#modal1">Mensaje<i class="material-icons">message</i></a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect" href="#!">Cerrar Sesion</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  <div class="container bg-newsfeed">
-    <img class="img-user img-user-2" src="../assets/images/moon.jpg" alt="img-user">  
-    <div class="username">
-      <span id="user">Username</span>
-      <hr>
-    </div>
-  </div>
-  <div class="container bg-publish grey lighten-5">
-    <img class="img-user img-user-3 user-publish" src="../assets/images/moon.jpg" alt="img-user">        
-    <!--<input id="search" type="text"  placeholder="Buscar">-->
-    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-    <br>
-    
-    <form class="form" action="#">
-        <div class="file-field input-field">
-          <div class="orange-text">
-            <span class="fa fa-camera"></span>
-            <input type="file">
+  </header>
+  <div class="container" id="main">
+    <div class="row ">
+      <div class="col s12 m3 l3 bg-beige card-profile vh420">
+        <img class="img-user img-user-2" src="../assets/images/moon.jpg" alt="img-user">  
+        <div class="username">
+          <span id="user"></span>
+          <hr>
+        </div>
+        <div class="card-profile-stats-container text-center">
+          <div class="card-profile-stats-statistic  ">
+            <span class="stat ft-grey">1</span>
+            <p>posts</p>
           </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
+          <div class="card-profile-stats-statistic">
+            <span class="stat ft-grey">1</span>
+            <p>friends</p>
+          </div>
+          <!-- /.card-profile-stats-statistic -->
+          <div class="card-profile-stats-statistic">
+            <span class="stat ft-grey">2</span>
+            <p>interest</p>
           </div>
         </div>
-      </form>
-      <form  class="form"action="#">
+      </div>
+      <div class="col s12 m7 offset-m2 l6 offset-l3 bg-beige card-profile">
+        <img class="img-user img-user-3 user-publish" src="../assets/images/moon.jpg" alt="img-user">        
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <img id="img1" class="img-input">
+        <br>
+        <form class="form" action="#">
           <div class="file-field input-field">
-            <div class="purple-text">
-              <span class="fa fa-video-camera"></span>
-              <input type="file">
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text">
+            <div class="indigo-text ">
+              <span class="material-icons">camera_alt</span>
+              <input type="file" id="img-file">
+              <span class="material-icons">videocam</span>
+              <!-- <input type="file"> -->
             </div>
           </div>
         </form>
-    <div>
-      <input id="posting" type="button" class="btn teal btn-publish" value="Publicar">
+        <div>
+          <input id="posting" type="button" class="btn teal btn-publish" value="Publicar">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 offset-m3 l12  card-profile bg-beige" id="container-publish">
+
+      </div>
+    </div>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bg-beige">
+    <div class="modal-content">
+      <h5 class="text-center">Inicia conversacion</h5>
+      <div class="container">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Contacto" id="first_name" type="text" class="validate">
+                <label for="first_name">Para:</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Mensaje</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer bg-beige">
+      <a href="#!" id="" class="modal-action modal-close waves-effect waves-green btn-flat">Enviar Mensaje</a>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
