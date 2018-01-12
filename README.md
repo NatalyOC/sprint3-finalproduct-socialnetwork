@@ -12,7 +12,7 @@ En la entrevista con nuestro usuario, nos comentó que sus páginas/redes social
 
 ### Prototipado:
 
-![web](assets/images/redsocial.png)
+![web](assets/redsocial.png)
 
 ### Planificación:
 
