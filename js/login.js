@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $btnLogin = $('#button-login');
   
-  var validateEmail = false;
+  /* var validateEmail = false;
   var validatePassword = false; 
   // Validacion de inputs
   $('#password').on('input', function(event) {
@@ -44,5 +44,35 @@ $(document).ready(function() {
   }  
   $('#button-login').on('click', function() {
     $(location).attr('href', 'newsfeed.html');
+  });*/
+
+  // ---------------------------------------------
+  var $emailLogin = $('#email');
+  var $passwordLogin = $('#password');
+  var $buttonLogin = $('#button-login');
+  // ---------------------------------------------
+  var verifyEmailLogin = false;
+  var verifyPasswordLogin = false;
+  // ----------------------------------------------
+  $emailLogin.on('input', function() {
+    if ($(this).val() === localStorage.email) {
+      verifyEmailLogin = true;
+      activeButton2();
+    }
+  });
+  $passwordLogin.on('input', function() {
+    if ($(this).val() === localStorage.password) {
+      verifyPasswordLogin = true;
+      activeButton2();
+    } 
+  });
+  function activeButton2() {
+    if (verifyEmailLogin && verifyPasswordLogin) {
+      $buttonLogin.prop('disabled', false);
+    }
+  }
+  $buttonLogin.on('click', function() {
+    $(location).attr('href', 'newsfeed.html'); 
   });
 });
+// 
