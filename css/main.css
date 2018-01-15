@@ -21,6 +21,8 @@ header{
 }
 .button-op{
   width: 35vh;
+  display: flex;
+  flex-flow: column;
   text-align: center;
   margin: auto;
   position: relative;
@@ -78,11 +80,16 @@ input#signup{
       padding-left: 1.5em;
       font-family: 'Pacifico', cursive;
     }
+    .logo-s{
+      display: none;
+    }
     .button-op{
       position: absolute;
       top: 4vh;
       right: 4vh;
       width: auto;
+      flex-flow: row;
+      float: left;
     }
     .btn-login{
       margin-right: 2vh;
@@ -98,8 +105,6 @@ input#signup{
       background: #b8d7d4; 
       color: #0e1217;
       width: 25vh;
-      position: relative;
-      top: -2vh;
     }
     .form-signup{
       position: absolute;
@@ -118,7 +123,8 @@ input#signup{
       width: 100%;
       height: 100vh;
       position: relative;
-      top: 20vh;
+      top: 0vh;
+      z-index: -1;
     }
     .button-account{
       align-items: center;
@@ -127,6 +133,7 @@ input#signup{
     }
     #button-signup{
       background: silver;
+      position: relative;
     }
     .text-center{
       text-align: center;
@@ -138,6 +145,10 @@ input#signup{
 .logo-main{
   padding-left: 55px;
   height: 100px;
+  width: 45vh;
+  height: 10vh;
+  position: relative;
+  top: 3vh;
 }
 /*Estilos para la pagina Publicaciones*/
 .bg-blue{
@@ -170,15 +181,44 @@ input#signup{
 .container-90{
   width: 90%!important;
 }
+.logo-s{
+  position: absolute;
+  left: -3vh;
+}
 .logo-tipo{
     width: 7rem;
     height: 7rem;
     padding: 10px;
     position: absolute;
-    top: 50px;
-    left: 35%;
+    top: 0vh;
+    left: 39vh;
+}
+/* Estilos login*/
+.message-text{
+  display: none;
+  margin: 0 20px;
+  color: #66757f;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  word-wrap: break-word;
 }
   /* Estilos para la vista newsfeed*/
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 300px; /* Changed this to accomodate content width */
+  max-height: auto;
+	margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+  
+}
 .card-profile{
   margin-top: 30px;
   padding: 20px;
@@ -223,4 +263,5 @@ input#signup{
   width: 5rem;
   height: 5rem;
   padding: 10px;
+  margin-left: 50px;
 }

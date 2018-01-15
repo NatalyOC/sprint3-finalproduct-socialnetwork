@@ -258,6 +258,9 @@ form.form{
         margin: 3vh;
         font-size: 1.6em;
     }
+    #div{
+        margin-right: 4%;
+    }
     .fa{
         margin-right: 3vh;
     }
