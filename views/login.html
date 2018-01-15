@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Red Social</title>
+  <title>Iniciar Sesion</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
@@ -17,9 +17,9 @@
     <div class="container">
      <nav class="nav bg-blue">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo left"><img src="../assets/images/logos1.png" alt="" class="logo"></a>
+          <a href="#" class="brand-logo right"><img src="../assets/images/logos1.png" alt="" class="logo"></a>
           <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a  href="#">Sobre Nosotros</a></li>
             <li><a  href="#">Registrarse</a></li>
           </ul>
@@ -40,19 +40,32 @@
     </div>
   </header>
   <!-- form -->
-  <div class="container form-login bg-beige">
-    <label for="email">Email</label>
-    <input id="email" type="email" class="validate">
-    <label for="password">Password</label>
-    <input id="password" type="password" class="validate">
-    <br><br>
+  <div class="container form-login bg-beige" >
+    <form action="" id="form">
+      <label for="email">Email</label>
+      <input id="email" type="email" class="validate">
+      <label for="password">Password</label>
+      <input id="password" type="password" class="validate">
+      <br><br>
+    </form>
     <div class="text-center">
-      <button class="btn btn-account" id="button-login" disabled="true">inicia sesión</button>
+        <button class="btn btn-account" id="button-login" disabled="true">inicia sesión</button>
+    </div>
+    <div class="alert-messages hidden" id="message-drawer" style="top: -40px;">
+        <div class="message ">
+      <div class="message-inside">
+        <span class="message-text">El nombre de usuario y la contraseña que ingresaste no coinciden con nuestros registros. Por favor, revisa e inténtalo de nuevo.</span>
+          <a role="button" class="Icon Icon--close Icon--medium dismiss" href="#">
+            <span class="visuallyhidden">Descartar</span>
+          </a>
+      </div>
+    </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="../js/datars.js"></script>
   <script src="../js/login.js"></script>
 </body>
 </html>

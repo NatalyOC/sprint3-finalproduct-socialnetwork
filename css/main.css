@@ -138,6 +138,10 @@ input#signup{
 .logo-main{
   padding-left: 55px;
   height: 100px;
+  width: 45vh;
+  height: 10vh;
+  position: relative;
+  top: 3vh;
 }
 /*Estilos para la pagina Publicaciones*/
 .bg-blue{
@@ -178,7 +182,32 @@ input#signup{
     top: 50px;
     left: 35%;
 }
+/* Estilos login*/
+.message-text{
+  display: none;
+  margin: 0 20px;
+  color: #66757f;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  word-wrap: break-word;
+}
   /* Estilos para la vista newsfeed*/
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 300px; /* Changed this to accomodate content width */
+  max-height: auto;
+	margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+  
+}
 .card-profile{
   margin-top: 30px;
   padding: 20px;
@@ -223,4 +252,5 @@ input#signup{
   width: 5rem;
   height: 5rem;
   padding: 10px;
+  margin-left: 50px;
 }

@@ -61,6 +61,6 @@ aA789ggg
   $('#button-signup').on('click', function(event) {
     event.preventDefault();
     console.log(event);
-    $(location).attr('href', '../views/newsfeed.html');
+    $(location).attr('href', 'views/newsfeed.html');
   });
 });
